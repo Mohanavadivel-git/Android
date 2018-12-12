@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">MyFirstApp</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="feedbacktitle">FeedbackTitle</string>
+    <string name="feedbackname">Feedbackname</string>
+    <string name="feedbackemail">Feedbackemail</string>
+    <string name="feedbacktype">FeedbackType</string>
+    <string name="feedbackbody">Feedbackbody</string>
+    <string name="feedbackresponse">Feedbackresponse</string>
+    <string name="feedbackbutton">Feedbackbutton</string>
+    <!--Other string resources also defined in this file… -->
+    <string name="feedbacktype1">Praise</string>
+    <string name="feedbacktype2">Gripe</string>
+    <string name="feedbacktype3">Suggestion</string>
+    <string name="feedbacktype4">Bug</string>
+    <string-array name="feedbacktypelist">
+        <item>@string/feedbacktype1</item>
+        <item>@string/feedbacktype2</item>
+        <item>@string/feedbacktype3</item>
+        <item>@string/feedbacktype4</item>
+    </string-array>
+
 </resources>
