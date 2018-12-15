@@ -34,5 +34,8 @@
         completions."
     </string>
     <string name="title_activity_login2">Sign in</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_trial">Trial</string>
+    <string name="title_activity_post">PostActivity</string>
 
 </resources>
