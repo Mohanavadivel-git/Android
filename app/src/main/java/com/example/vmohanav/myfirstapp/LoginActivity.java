@@ -27,7 +27,7 @@ public class LoginActivity extends Activity {
 
     }
     public void submitLogin(View button){
-        Intent i = new Intent(getApplicationContext(), HomePage.class);
+        Intent i = new Intent(getApplicationContext(), damienpost.class);
         startActivity(i);
     }
 }

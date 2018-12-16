@@ -36,6 +36,10 @@
         <activity
             android:name=".PostActivity"
             android:label="@string/title_activity_post"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".damienpost"
+            android:label="@string/title_activity_damienpost"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

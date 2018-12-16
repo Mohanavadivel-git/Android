@@ -16,7 +16,7 @@ public class HomePage extends AppCompatActivity {
         ImageButton myButton = (ImageButton) findViewById(R.id.patientRetrival);
     }
     public void patientRetrivalfunc(View button){
-        Intent intent = new Intent(this, Test.class);
+        Intent intent = new Intent(this, damienpost.class);
         startActivity(intent);
     }
 }

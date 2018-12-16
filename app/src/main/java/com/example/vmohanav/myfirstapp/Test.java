@@ -68,7 +68,7 @@ public class Test extends AppCompatActivity {
                     "Profile updated",
                     Toast.LENGTH_SHORT);
             toast.show();
-            Intent i = new Intent(getApplicationContext(), PostActivity.class);
+            Intent i = new Intent(getApplicationContext(), damienpost.class);
             startActivity(i);
         }
 }
