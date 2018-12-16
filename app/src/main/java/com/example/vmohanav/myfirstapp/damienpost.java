@@ -41,7 +41,7 @@ public class damienpost extends AppCompatActivity {
         //TextView StateName = (TextView) findViewById(R.id.StateText);
         Log.e("request:","correct response");
         try {
-            TextView PatientName = (TextView) findViewById(R.id.NameText);
+            TextView PatientName = (TextView) findViewById(R.id.FNameText);
             String content = PatientName.getText().toString();
             Log.e("request:","---------------"+content);
             json.put("Name",content);

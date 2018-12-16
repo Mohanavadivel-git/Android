@@ -13,10 +13,17 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        ImageButton myButton = (ImageButton) findViewById(R.id.patientRetrival);
+        //ImageButton myButton = (ImageButton) findViewById(R.id.patientRetrival);
     }
-    public void patientRetrivalfunc(View button){
+    public void submitLepra(View button){
         Intent intent = new Intent(this, damienpost.class);
         startActivity(intent);
     }
+
+
+    public void submitCare(View button){
+
+    }
+
+
 }
