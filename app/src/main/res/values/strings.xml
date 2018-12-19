@@ -20,7 +20,8 @@
         <item>@string/feedbacktype4</item>
     </string-array>
     <string name="title_activity_sign_in">Sign in</string>
-
+    <color name="White">#ffffff</color>
+    <color name="Red">#eb1423</color>
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
@@ -161,7 +162,15 @@
     <string-array name="delhi">
         <item>"New Delhi"</item>
     </string-array>
-
+    <string-array name="LeprosyType">
+        <item>"MB"</item>
+        <item>"LB"</item>
+    </string-array>
+    <string-array name="ReactionType">
+        <item>"1"</item>
+        <item>"11"</item>
+        <item>"Neuritis"</item>
+    </string-array>
     <string-array name="tn_hf">
         <item>"TN-HF1"</item>
         <item>"TN-HF2"</item>
@@ -197,5 +206,9 @@
         <item>"JH-HF4"</item>
         <item>"JH-HF5"</item>
     </string-array>
+    <string name="title_activity_bottom_navigation">BottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 
 </resources>

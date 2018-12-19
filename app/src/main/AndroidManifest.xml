@@ -40,7 +40,7 @@
         <activity
             android:name=".damienpost"
             android:label="@string/title_activity_damienpost"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

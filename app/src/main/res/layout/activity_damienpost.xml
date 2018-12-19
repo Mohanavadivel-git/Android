@@ -9,8 +9,17 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/White"
     tools:context=".damienpost">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/Red"
+        android:elevation="4dp"
+        android:theme="@style/ToolBarStyle"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
         <ScrollView
             android:id="@+id/lepraregister_form"
@@ -18,6 +27,8 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:scrollbarSize="100dp">
+
+
 
             <LinearLayout
                 android:id="@+id/ll_register"
@@ -47,7 +58,7 @@
                     android:layout_marginTop="@dimen/layout_margin_top"
                     android:layout_marginBottom="@dimen/layout_margin_bottom"
                     android:entries="@array/state_list"
-                    android:drawSelectorOnTop="true" />
+                    android:drawSelectorOnTop="true"/>
 
                 <!-- Name of the District -->
                 <TextView
@@ -200,13 +211,16 @@
                     android:layout_marginRight="@dimen/margin_right"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
-                <!-- Input of the LeprosyType-->
-                <EditText
-                    android:id="@+id/LeprosyTypeValue"
+                <Spinner
+                    android:id="@+id/LeprosyTypeSpinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/margin_left"
-                    android:layout_marginRight="@dimen/margin_right"/>
+                    android:layout_marginRight="@dimen/margin_right"
+                    android:layout_marginTop="@dimen/layout_margin_top"
+                    android:layout_marginBottom="@dimen/layout_margin_bottom"
+                    android:entries="@array/LeprosyType"
+                    android:drawSelectorOnTop="true" />
 
                 <!-- Label of the Date of Reaction identified-->
                 <TextView
@@ -256,12 +270,15 @@
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                 <!-- Input of the Type of reaction (I,II , neuritis)-->
-                <Spinner
+                 <Spinner
                     android:id="@+id/TypeReactionSpinner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/margin_left"
                     android:layout_marginRight="@dimen/margin_right"
+                    android:layout_marginTop="@dimen/layout_margin_top"
+                    android:layout_marginBottom="@dimen/layout_margin_bottom"
+                    android:entries="@array/ReactionType"
                     android:drawSelectorOnTop="true" />
 
                 <!-- Label of the Prednisolone dose issued with dates Dose (40 mg)-->
@@ -409,6 +426,7 @@
                     android:textAppearance="?android:attr/textAppearanceLarge" />
                 <!-- Input of Treatment completed Yes or No related Questions-->
                 <RadioGroup
+                    android:id="@+id/Treatmentstatus"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -417,16 +435,13 @@
                         android:id="@+id/radio_treat_yes"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yes"
-                        android:onClick="Choose_Treatment_Completed"/>
+                        android:text="@string/yes"/>
 
                     <RadioButton
                         android:id="@+id/radio_treat_no"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/no"
-                        android:onClick="Choose_Treatment_Completed"/>
-
+                        android:text="@string/no"/>
                 </RadioGroup>
 
 
@@ -442,6 +457,7 @@
 
                 <!-- Input of Defaulted/Died/others Yes or No related Questions-->
                 <RadioGroup
+                    android:id="@+id/personstatus"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -450,15 +466,13 @@
                         android:id="@+id/radio_ddo_yes"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/yes"
-                        android:onClick="Choose_DDO_Value"/>
+                        android:text="@string/yes"/>
 
                     <RadioButton
                         android:id="@+id/radio_ddo_no"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/no"
-                        android:onClick="Choose_DDO_Value"/>
+                        android:text="@string/no"/>
                 </RadioGroup>
 
 
@@ -491,8 +505,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Submit"
+                        android:background="@color/Red"
+                        android:theme="@style/Theme.AppCompat"
+                        android:gravity="center_horizontal|center"
                         android:layout_marginLeft="@dimen/margin_left"
-                        android:layout_marginRight="@dimen/margin_right"/>
+                        android:layout_marginRight="@dimen/margin_right"
+                        android:onClick="submitclick"/>
 
 
                     <Button
@@ -500,25 +518,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cancel"
+                        android:background="@color/Red"
+                        android:theme="@style/Theme.AppCompat"
                         android:layout_toRightOf="@id/submit"/>
 
                 </RelativeLayout>
-
-
-
-                />
-
-                <Button
-                    android:id="@+id/btn_register"
-                    style="?android:textAppearanceSmall"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
-                    android:background="@color/colorPrimary"
-                    android:text="Register"
-                    android:textColor="@android:color/white"
-                    android:textStyle="bold" />
-
             </LinearLayout>
         </ScrollView>
 
