@@ -6,47 +6,56 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ToolBarStyle"
     tools:context=".HomePage">
 
-    <!--<ImageButton
-        android:id="@+id/patientRetrival"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/patientsearch"
-        android:onClick="patientRetrivalfunc"/>-->
+    <in.goodiebag.carouselpicker.CarouselPicker
+        android:id="@+id/homepagecarouselpicker"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/Red"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <LinearLayout
         android:id="@+id/ll_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:orientation="vertical">
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="1dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
 
-        <!--Label for Title-->
-        <TextView
-            android:layout_width="match_parent"
+
+
+        <!--ImageButton
+            android:id="@+id/patientRetrival"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/summary"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:textSize="50dip"
-            android:textColor="@color/colorPrimaryDark"
-            />
+            android:src="@drawable/lepraform"
+            android:onClick="submitLepra"/>
 
-        <!-- Lepra Reaction button -->
+        <TextView
+            android:id="@+id/lepraformtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lepraform"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" /-->
+
+        <!--Lepra Reaction button -->
         <Button
             android:id="@+id/btn_register"
             style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="60dp"
             android:background="@color/colorPrimary"
             android:text="@string/lepra"
             android:textColor="@android:color/white"
@@ -59,12 +68,12 @@
             style="?android:textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="60dp"
             android:background="@color/colorPrimary"
             android:text="@string/care"
             android:textColor="@android:color/white"
             android:onClick="submitCare"
             android:textStyle="bold" />
 
-    </LinearLayout>
+    </LinearLayout>-->
 </LinearLayout>

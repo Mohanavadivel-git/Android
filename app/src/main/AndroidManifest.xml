@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -41,6 +42,10 @@
             android:name=".damienpost"
             android:label="@string/title_activity_damienpost"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Imageupload"
+            android:label="@string/title_activity_imageupload"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
